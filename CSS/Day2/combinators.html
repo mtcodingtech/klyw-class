@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* Descendant  */
+        /* div p{
+            background-color: aqua;
+        } */
+
+        /* child */
+        /* div > p{
+            background-color: blue;
+        } */
+         
+        /* div + p{
+            background-color: red;
+        } */
+
+        div ~ p{
+            background-color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Para 1</p>
+      <p>Para 2</p>
+      <span>
+        <p>Para in span</p>
+      </span>
+    </div>
+    <p>Outside para 1</p>
+    <p>Outside para 2</p>
+    <h2>H2</h2>
+  </body>
+</html>
