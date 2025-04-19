@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      html{
+        scroll-behavior: smooth;
+      }
       .card {
         width: 300px;
         height: 350px;
@@ -28,10 +31,26 @@
         width: 100%;
         text-align: center;
       }
+      .para{
+        height: 1200px;
+        background-color: rgb(244, 159, 32);
+      }
+      a{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .heading1{
+        padding: 20px;
+        background-color: hotpink;
+        position: sticky;
+        top: 0;
+      }
     </style>
   </head>
   <body>
-    <div class="card">
+    <div class="card" id="card1">
       <img
         src="https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
         alt="img"
@@ -41,5 +60,8 @@
         <p>This is p</p>
       </div>
     </div>
+    <h1 class="heading1">Heading 1</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, voluptate aliquid aliquam commodi obcaecati minima veniam corrupti. Iure exercitationem quae, minus repellendus sequi omnis alias quaerat architecto eligendi officiis delectus!</p>
+   <a href="#card1"><button>Button</button></a> 
   </body>
 </html>
