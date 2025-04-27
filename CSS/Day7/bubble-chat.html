@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 130px;
+            background-color: orangered;
+            border-radius: 20px;
+            position: relative;
+        }
+        .box::before{
+            content: "";
+            /* width: 50px;
+            height: 50px;
+            background-color: pink; */
+            position: absolute;
+            border: 20px solid transparent;
+            border-top-color: orangered;
+            bottom: -1.2rem;
+            right: 1.4rem;
+            transform: rotate(90deg);
+        }
+        .box::after{
+            content: "";
+            width: 10px;
+            height: 60px;
+            border-radius: 20px;
+            background-color: rgba(242, 70, 7, 0.844);
+            position: absolute;
+            top: 2rem;
+            left: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

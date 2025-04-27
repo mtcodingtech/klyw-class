@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        height: 100vh;
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap-reverse; */
+      }
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: orangered;
+        color: aliceblue;
+      }
+      .item:nth-child(1) {
+        order: 2;
+        background-color: green;
+      }
+      .item:nth-child(2) {
+        order: 3;
+        align-self: flex-end;
+        background-color: rgb(228, 145, 21);
+      }
+      .item:nth-child(3) {
+        order: 1;
+        align-self: flex-start;
+        background-color: rgb(14, 185, 216);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">One</div>
+      <div class="item">Two</div>
+      <div class="item">Three</div>
+    </div>
+  </body>
+</html>
